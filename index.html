@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Drum Kit</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://fav.farm/🔥" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Jaro:opsz@6..72&family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Jaro:opsz@6..72&family=Oleo+Script:wght@400;700&family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <h1>Online piano</h1>
+
+  <div class="keys">
+    <div data-key="81" class="key">
+      <kbd>Q</kbd>
+      <span class="sound">Do</span>
+    </div>
+    <div data-key="87" class="key">
+      <kbd>W</kbd>
+      <span class="sound">Re</span>
+    </div>
+    <div data-key="69" class="key">
+      <kbd>E</kbd>
+      <span class="sound">Mi</span>
+    </div>
+    <div data-key="82" class="key">
+      <kbd>R</kbd>
+      <span class="sound">Fa</span>
+    </div>
+    <div data-key="84" class="key">
+      <kbd>T</kbd>
+      <span class="sound">Sol</span>
+    </div>
+    <div data-key="89" class="key">
+      <kbd>Y</kbd>
+      <span class="sound">La</span>
+    </div>
+    <div data-key="85" class="key">
+      <kbd>U</kbd>
+      <span class="sound">Si</span>
+    </div>
+    <div data-key="73" class="key">
+      <kbd>I</kbd>
+      <span class="sound">Do</span>
+    </div>
+    <div data-key="79" class="key">
+      <kbd>O</kbd>
+      <span class="sound">Re</span>
+    </div>
+    <div data-key="80" class="key">
+      <kbd>P</kbd>
+      <span class="sound">Mi</span>
+    </div>
+    <div data-key="219" class="key">
+      <kbd>[</kbd>
+      <span class="sound">Fa</span>
+    </div>
+    <div data-key="221" class="key">
+      <kbd>]</kbd>
+      <span class="sound">Sol</span>
+    </div>
+    
+  </div>
+  <div class="new-layer">
+  <div class="keys ukeys">
+    <div data-key="50" class="key ukey">
+      <kbd>2</kbd>
+      <span class="sound">Do#</span>
+    </div>
+    <div data-key="51" class="key ukey">
+      <kbd>3</kbd>
+      <span class="sound">Re#</span>
+    </div>
+    <div style="opacity: 0;" data-key="52" class="key ukey">
+      <kbd>4</kbd>
+      <span class="sound">Mi#</span>
+    </div>
+    <div data-key="53" class="key ukey">
+      <kbd>5</kbd>
+      <span class="sound">Fa#</span>
+    </div>
+    <div data-key="54" class="key ukey">
+      <kbd>6</kbd>
+      <span class="sound">Sol#</span>
+    </div>
+    <div data-key="55" class="key ukey">
+      <kbd>7</kbd>
+      <span class="sound">La#</span>
+    </div>
+    <div style="opacity: 0;" data-key="56" class="key ukey">
+      <kbd>8</kbd>
+      <span class="sound">Si#</span>
+    </div>
+    <div data-key="57" class="key ukey">
+      <kbd>9</kbd>
+      <span class="sound">Do#</span>
+    </div>
+    <div data-key="48" class="key ukey">
+      <kbd>0</kbd>
+      <span class="sound">Re#</span>
+    </div>
+    <div style="opacity: 0;" data-key="189" class="key ukey">
+      <kbd>-</kbd>
+      <span class="sound">Si#</span>
+    </div>
+    <div data-key="187" class="key ukey">
+      <kbd>=</kbd>
+      <span class="sound">Fa#</span>
+    </div>
+    
+  </div>
+</div>
+<p class="footer">by Kamil Aliyev 2024</p>
+
+  <audio data-key="81" src="sounds/39175__jobro__piano-ff-028.wav"></audio>
+  <audio data-key="50" src="sounds/39176__jobro__piano-ff-029.wav"></audio>
+  <audio data-key="87" src="sounds/39177__jobro__piano-ff-030.wav"></audio>
+  <audio data-key="51" src="sounds/39178__jobro__piano-ff-031.wav"></audio>
+  <audio data-key="69" src="sounds/39179__jobro__piano-ff-032.wav"></audio>
+  <audio data-key="82" src="sounds/39180__jobro__piano-ff-033.wav"></audio>
+  <audio data-key="53" src="sounds/39181__jobro__piano-ff-034.wav"></audio>
+  <audio data-key="84" src="sounds/39182__jobro__piano-ff-035.wav"></audio>
+  <audio data-key="54" src="sounds/39183__jobro__piano-ff-036.wav"></audio>
+  <audio data-key="89" src="sounds/39184__jobro__piano-ff-037.wav"></audio>
+  <audio data-key="55" src="sounds/39185__jobro__piano-ff-038.wav"></audio>
+  <audio data-key="85" src="sounds/39186__jobro__piano-ff-039.wav"></audio>
+  <audio data-key="73" src="sounds/39187__jobro__piano-ff-040.wav"></audio>
+  <audio data-key="57" src="sounds/39188__jobro__piano-ff-041.wav"></audio>
+  <audio data-key="79" src="sounds/39189__jobro__piano-ff-042.wav"></audio>
+  <audio data-key="48" src="sounds/39190__jobro__piano-ff-043.wav"></audio>
+  <audio data-key="80" src="sounds/39191__jobro__piano-ff-044.wav"></audio>
+  <audio data-key="219" src="sounds/39194__jobro__piano-ff-046.wav"></audio>
+  <audio data-key="187" src="sounds/39195__jobro__piano-ff-047.wav"></audio>
+  <audio data-key="221" src="sounds/39196__jobro__piano-ff-048.wav"></audio>
+
+<script>
+
+function playSound(e){
+  const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+   if(!audio) return; //stop function from running all together
+    audio.currentTime = 0; //rewind to the start
+    audio.play();
+
+
+    const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+    console.log(key);
+    key.classList.add('playing');
+    console.log(e);
+}
+
+
+function removeTransition(e){
+  if(e.propertyName !== "transform") return; //skip it if transition is not transform
+  this.classList.remove('playing');
+}
+
+const keys = document.querySelectorAll('.key');
+keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+window.addEventListener('keydown', playSound);
+
+</script>
+
+
+</body>
+</html>
