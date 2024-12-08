@@ -12,7 +12,7 @@ body,html {
   font-optical-sizing: auto;
 }
 h1{
-  position: absolute;
+  position: relative;
   text-align: center;
   width: 100%;
   color: white;
@@ -23,43 +23,35 @@ h1{
   font-style: normal;
 
 }
-.footer{
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  color: white;
-  font-size: 15px;
-  bottom: 20px;
 
-  font-family: "Oleo Script", system-ui;
-  font-style: normal;
-}
 
 .keys {
   display: flex;
   flex: 1;
-  min-height: 100vh;
+  /* min-height: 100vh;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 .new-layer{
-  position: absolute; 
-    top: 150px;
-    left: 50px;
+  position: relative; 
+    margin-top: 2rem;
+    /* left: 50px; */
     
     width: 92%;
-    height: 480px;
+    /* height: 480px; */
     z-index: 2; 
+    margin-left: 4rem;
 
 }
 .ukeys{
-  box-sizing:content-box;
+  /* box-sizing:content-box; */
   position: relative;
   z-index: 1; 
   width: 100%;
-  height: 400px;
+  /* height: 400px; */
   align-items: baseline;
   min-height: 20vh;
+  left: 50px;
 }
 
 .key {
@@ -69,14 +61,11 @@ h1{
   font-size: 1.5rem;
   padding: 1rem .5rem;
   transition: all 0.07s ease;
-  width: 10rem;
+  width: 70px;
   text-align: center;
   color: white;
   background: rgba(0,0,0,0.4);
   text-shadow: 0 0 .5rem black;
-}
-.ukey:first{
-  margin-left: 10px;
 }
 .playing {
   transform: scale(1.1);
@@ -94,4 +83,16 @@ kbd {
   text-transform: uppercase;
   letter-spacing: .1rem;
   color: #ffc600;
+}
+
+.footer{
+  position: relative;
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-size: 15px;
+  margin-top: 180px;
+
+  font-family: "Oleo Script", system-ui;
+  font-style: normal;
 }
